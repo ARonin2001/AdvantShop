@@ -1,0 +1,30 @@
+.order-status {
+    background: #F9F9F9;
+    border-radius: 4px;
+    padding: 30px 32px;
+    margin-bottom: 40px;
+
+    &__title {
+        max-width: 108px;
+        color: #000000;
+        font-size: $font-size16;
+        line-height: 140%;
+        margin-bottom: 9px;
+    }
+
+    &__number {
+        margin-bottom: 8px;
+        width: 100%;
+        height: 40px;
+        color: #8A8A8F;
+        padding: 8px 0 10px 12px;
+
+        &::placeholder {
+            color: inherit;
+        }
+    }
+    &__btn {
+        width: 113px;
+        height: 40px;
+    }
+}

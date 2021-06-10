@@ -1,0 +1,18 @@
+.articles {
+    margin-bottom: 40px;
+    
+    &__item {
+        margin-bottom: 33px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    &__title {
+        color: #000000;
+        line-height: 160%;
+    }
+    &__sub-title {
+        color: #8A8A8F;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,68 @@
+.interview {
+    .title {
+        margin-bottom: 7px;
+    }
+    &__sub-title {
+        margin-bottom: 29px;
+    }
+    &__btn {
+        width: 115px;
+        height: 38px;
+    }
+
+    // radio
+    &__radio-item {
+        display: flex;
+        position: relative;
+        margin-bottom: 21px;
+    }
+    &__radio-container {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    &__radio {
+        appearance: none;
+        position: absolute;
+
+        &:checked .interview__label:after {
+            opacity: 1;
+        }
+    }
+    &__label {
+        line-height: 160%;
+        color: #666666;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            left: 0;
+            top: 0;
+            background: #FFFFFF;
+            border: 1px solid #C8C7CC;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            opacity: 0;
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            top: 2px;
+            background: $blue-color;
+            border-radius: 50%;
+            z-index: 2;
+        }
+    }
+    &__label-container {
+        display: flex;
+        align-items: flex-end;
+    }
+}
