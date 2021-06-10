@@ -7,7 +7,6 @@
 }
 
 // base
-
 @import 'reset';
 @import 'fonts';
 @import 'base/animations';
@@ -27,6 +26,30 @@ body {
     }
 }
 
+#main {
+    width: 100%;
+    height: 100%;
+}
+.main__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+
 // blocks
 @import 'blocks/wraper';
+@import 'blocks/button';
 @import 'blocks/header';
+@import 'blocks/content';
+@import 'blocks/aside';
+@import 'blocks/menu';
+@import 'blocks/articles';
+@import 'blocks/order_status';
+@import 'blocks/interview';
