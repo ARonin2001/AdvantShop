@@ -1,0 +1,82 @@
+.content {
+    // menu
+    &__menu {
+        width: 100%;
+        height: 48px;
+        background-color: $blue-color;
+        border-radius: 4px;
+        font-size: $font-size16;
+        color: #FFFFFF;
+        position: relative;
+
+        &-container {
+            @include flexible();
+            padding: 13px 30px 11px 22px;
+            width: inherit;
+            height: inherit;
+        }
+
+        &-nav {
+            width: 100%;            
+        }
+        &-ul {
+            @include flexible();
+            justify-content: space-between;
+
+            // show sub-menu
+            &>li:first-child:hover .content__menu-ul_sub {
+                display: block;
+            }
+
+            li a {
+                color: #FFFFFF;
+                font-size: $font-size16;
+                @include flexible();
+
+                &:first-child:hover .content__menu-ul_sub {
+                    display: block;
+                }
+            }
+            li a span {
+                font-size: 24px;
+            }
+            li a .icon-arrow-up {
+                transform: rotate(180deg);
+                margin-left: 5px;
+            }
+
+            // sub-menu
+            &_sub {
+                position: absolute;
+                display: none;
+                top: 80%;
+                left: 0;
+                max-width: 205px;
+                width: 100%;
+                padding: 10px 0 0 0;
+                border-radius: 10px;
+                box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+                
+                li {
+                    background: #FFFFFF;
+                    padding: 21px 0 18px 24px;
+                    
+                    &:nth-child(n+1) {
+                        border-top: 1px solid #EFEFF4;
+                    }
+                    &:first-child {
+                        border-radius: 10px 10px 0 0;
+                    }
+                    &:last-child { 
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+                li a {
+                    color: $blue-color;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
