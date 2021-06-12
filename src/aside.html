@@ -136,5 +136,30 @@
                 <button class="btn interview__btn">Голосовать</button>
             </form>
         </div>
+
+        <!-- Content From VK -->
+        <div class="vk">
+
+        </div>
+        <script>
+            (function(){
+              var http = new XMLHttpRequest();
+              var path="https://www.321games.ru/";
+              http.setRequestHeader("Access-Control-Allow-Origin", "*");
+              http.setRequestHeader("Access-Control-Allow-Credentials", "true");
+              http.setRequestHeader("Access-Control-Max-Age", "1800");
+              http.setRequestHeader("Access-Control-Allow-Headers", "content-type");
+              http.setRequestHeader("Access-Control-Allow-Methods","PUT, POST, GET, DELETE, PATCH, OPTIONS");
+              http.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With, content-type");  
+              http.open('GET', 'https://www.321games.ru/');
+              http.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                  var doc = new DOMParser().parseFromString(this.responseText, "text/html");  // преобразовать текст в HTML
+                  document.querySelector('.vk').innerHTML = doc.getElementsByTagName('h1')[0].innerHTML;
+                }
+              }
+              http.send(null);
+            })()
+            </script>
     </div>
 </aside>
