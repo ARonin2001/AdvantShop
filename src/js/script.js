@@ -24,3 +24,13 @@ catalogBurger.addEventListener('click', function() {
 
     catalogNav.style.display = "none";
 });
+
+// scroll main baner
+$('.autoplay').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // dots: true,
+    // infinite: true, 
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+});
