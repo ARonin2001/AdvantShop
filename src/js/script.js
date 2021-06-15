@@ -27,9 +27,10 @@ catalogBurger.addEventListener('click', function() {
 
 // scroll main baner
 $('.autoplay').slick({
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // dots: true,
+    dots: true
     // infinite: true, 
     // autoplay: true,
     // autoplaySpeed: 2000,
