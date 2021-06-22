@@ -1,47 +1,25 @@
 .tovars {
     .slick {
-        &-track::after {
+        &-next, &-prev {
             position: absolute;
-            top: 50%;
+            top: 22%;
+            font-size: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: url('../img/arrow-next.svg') center center no-repeat;
+            background-size: 19px;
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            z-index: 10;
+        }
+        &-next {
             right: 0;
-            display: block;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #FFFFFF;
-            cursor: pointer;
-            z-index: 10;
         }
-        &-track::before {
-            position: absolute;
-            top: 50%;
+        &-prev {
             right: 57px;
-            display: block;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #FFFFFF;
-            cursor: pointer;
-            z-index: 10;
+            transform: rotate(180deg);
+            background-color: rgb(255, 255, 255) !important;
+            opacity: 0.3;
         }
-    }
-    .icon-arrow-right::after {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        color: $blue-color;
-        font-size: 19px;
-        cursor: pointer;
-        z-index: 10;
-    }
-    .icon-arrow-right::before {
-        position: absolute;
-        top: 50%;
-        right: 57px;
-        color: $blue-color;
-        font-size: 19px;
-        cursor: pointer;
-        z-index: 10;
-        transform: rotate(180deg);
     }
 }

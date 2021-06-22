@@ -1,6 +1,13 @@
 .tovars {
     &__container {
         padding: 8px 13px 0 0;
+        margin-bottom: 60px;
+    }
+    &__info-container {
+        height: 142px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__header {
         display: flex;
