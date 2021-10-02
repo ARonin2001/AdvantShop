@@ -1,0 +1,73 @@
+.footer {
+
+    // TOP
+    padding: 0 100px;
+    &__container {
+        max-width: 1200px;
+        padding: 93px 36px 100px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__top {
+        margin-bottom: 123px;
+    }
+    &-info__items {
+        @include flexArguments(flex-start, space-between);
+    }
+    &-info__title {
+        color: #C8C7CC;
+    }
+
+    &__ul> li a {
+        color: #8A8A8F;
+    }
+    &-info__title, &__ul li {
+        margin-bottom: 25px;
+    }
+    &__ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .certificate {
+        padding: 17px 0 25px 22px;
+        width: 263px;
+        height: 150px;
+        background: #E74343;
+        border-radius: 4px;
+
+        &__link {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__text {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-size: 18px;
+            line-height: 130%;
+        }
+    }
+    // TOP END
+
+    // BOTTOM
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        color: #C8C7CC;
+    }
+    &__info-advantshop a {
+        color: $blue-color;
+    }
+
+    // maybe must to delete this
+    &__info-advantshop a:first-child {
+        margin-right: 15px;
+    }
+    // BOTTOM END
+
+}

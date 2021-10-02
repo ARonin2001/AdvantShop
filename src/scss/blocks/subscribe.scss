@@ -1,0 +1,30 @@
+.subscribe {
+    height: 147px;
+    background-color: $blue-color;
+    @include flexAll;
+    margin-top: 100px;
+
+    &__content {
+        @include flexArguments(center, center);
+    }
+    &__title {
+        margin-right: 24px;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+    &__email {
+        margin-right: 8px;
+        height: 40px;
+        width: 400px;
+        background: #FFFFFF;
+        border-radius: 4px; 
+        padding: 0 0 0 16px;
+    }
+    &__btn {
+        background: #00186A;
+        border-radius: 4px;
+        color: #FFFFFF;
+        padding: 9px 20px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,23 @@
+.news {    
+    padding: 0 0 0 9.5px;
+    &__item {
+        @include flexArguments(center, space-between);
+
+        &_left {
+            max-width: 516px;
+        }
+    }
+    .title {
+        margin-bottom: 24px;
+    }
+    &__info {
+        line-height: 160%;
+        margin-bottom: 30px;
+    }
+    &__link {
+        color: $blue-color;
+    }
+    &__img {
+        width: 100%;
+    }
+}

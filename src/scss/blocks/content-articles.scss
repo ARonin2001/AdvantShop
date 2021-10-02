@@ -1,0 +1,41 @@
+.content-articles {
+    &__container {
+        padding: 5px 8.5px 0 8.5px;
+    }
+
+    &__items {
+        @include flexArguments(center, space-between);
+        flex-wrap: wrap;
+    }
+    &__item {
+        @include flexArguments(flex-start, space-between);
+        flex-direction: column;
+        max-width: 260px;
+        // max-height: 320px;
+        height: 100%;
+        overflow: hidden;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+    &__img-container {
+        max-width: 230px;
+        height: 161px;
+    }
+    &__description {
+        line-height: 160%;
+        color: #666666;
+        overflow: hidden;
+        max-height: 109px;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 185px;
+        height: 185px;
+    }
+}

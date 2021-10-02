@@ -1,0 +1,20 @@
+.info-content {
+    &__container {
+        padding: 0 8.5px;
+    }
+    &__title {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 160%;
+        margin-bottom: 40px;
+        overflow: hidden;
+        max-height: 130px;
+    }
+    &__link {
+        color: $blue-color;
+        font-size: 12px;
+    }
+}
